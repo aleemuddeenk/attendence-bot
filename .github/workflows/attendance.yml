@@ -29,4 +29,4 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: "8317311861"
-        run: python attendence.py
+        run: python attendance.py
