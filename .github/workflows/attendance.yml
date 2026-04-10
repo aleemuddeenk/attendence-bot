@@ -30,5 +30,3 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: "8317311861"
         run: python attendence.py
-
-5. Click **Commit changes** ✅
