@@ -70,10 +70,10 @@ def analyze_attendance():
     )
     data = response.json()
     print(data)
-if "choices" in data:
-    return data["choices"][0]["message"]["content"]
-else:
-    return f"API Error: {data}"
+    if "choices" in data:
+      return data["choices"][0]["message"]["content"]
+    else:
+      return f"API Error: {data}"
 
 def send_to_telegram(text):
     # Send photo
