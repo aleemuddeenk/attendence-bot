@@ -69,7 +69,7 @@ def analyze_attendance():
         }
     )
     data = response.json()
-    print(data)
+    print("Using key:", OPENROUTER_API_KEY[:20])
     if "choices" in data:
       return data["choices"][0]["message"]["content"]
     else:
